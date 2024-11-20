@@ -1,4 +1,10 @@
 #include "output.h"
+/*
+TO DO:
+Export to excel
+Better formatting when output
+
+*/
 
 void output_signal_equation(Signal signal){
     if (signal.phase == 0.0){
