@@ -13,3 +13,5 @@ String input
 
 Function to read the string and map values to a dictionary
 std::map<float, float> signal_samples;
+
+Fourier transform to convert input samples into sinusodial signal.
