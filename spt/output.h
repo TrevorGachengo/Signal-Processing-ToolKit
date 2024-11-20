@@ -6,7 +6,4 @@
 
 void output_signal_equation(Signal signal);
 
-
-
-
 #endif
