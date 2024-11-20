@@ -15,9 +15,9 @@ int main(){
     std::map<float, float> signal_data;
     float start_time = 0.0;
     float end_time = 4.0;
-    float time_step = 0.1;  // Adjust time step for better resolution
+    float time_step = 0.1;  // higher = better output signal
 
-    // Generate signal data for different time points
+    // Calcuate signal data
     for (float t = start_time; t <= end_time; t += time_step) {
         signal_data[t] = s1.evaluate(t);
     }
@@ -25,10 +25,10 @@ int main(){
     // Export data to CSV file
     std::ofstream csv_file("signal_data.csv");
     if (csv_file.is_open()) {
-        // Write headers to CSV
+        // Headers
         csv_file << "Time,Amplitude\n";
 
-        // Write signal data to CSV
+        // Data
         for (const auto& [time, amplitude] : signal_data) {
             csv_file << time << "," << amplitude << "\n";
         }
